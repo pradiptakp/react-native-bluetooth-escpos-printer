@@ -239,7 +239,6 @@ public class PrinterCommand {
         byte[] escM = Arrays.copyOf(Command.ESC_M, Command.ESC_M.length);
         escM[2] = (byte) nFontType;
         byte[] data = null;
-        
         data = concatAll(gsExclamationMark, escT, escM, pbString);
         
         return data;
@@ -343,6 +342,16 @@ public class PrinterCommand {
         return data;
 
     }
+
+    /**
+     * 
+     *
+     * 
+     * @return
+     */
+    public static byte[] POS_Cut_One_Point() {
+        return Command.GS_i;
+    }    
 
 //***********************************以下函数为公开函数***********************************************************//
 
