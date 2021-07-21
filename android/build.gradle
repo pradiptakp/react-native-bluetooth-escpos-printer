@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         jcenter { url "https://jcenter.bintray.com/" }
-        maven {url "https://repo.spring.io/plugins-release/"}
+        google()
         mavenCentral()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
@@ -41,7 +41,7 @@ android {
 
 repositories {
     jcenter { url "https://jcenter.bintray.com/" }
-    maven {url "https://repo.spring.io/plugins-release/"}
+    google()
     mavenCentral()
     maven {
         // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
